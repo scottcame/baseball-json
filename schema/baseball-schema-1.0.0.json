@@ -1,0 +1,181 @@
+{
+
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Baseball Schema",
+  "id": "http://github.com/scottcame/baseball-json/schema/baseball-schema-1.0.0.json",
+
+  "definitions": {
+
+    "player": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "player_id": { "type": "string"},
+        "player_first_name": { "type": "string"},
+        "player_last_name": { "type": "string"}
+      },
+      "required": ["player_id"]
+    },
+
+    "umpire": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "umpire_id": { "type": "string"},
+        "umpire_first_name": { "type": "string"},
+        "umpire_last_name": { "type": "string"}
+      },
+      "required": ["umpire_id"]
+    },
+
+    "lineup_spot": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "player": { "$ref": "#/definitions/player" },
+        "lineup_position": { "type": "integer" },
+        "fielder_position": { "type": "integer" }
+      }
+    },
+
+    "team": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "team_id": { "type": "string"},
+        "team_name": { "type": "string"},
+        "lineup": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/lineup_spot"}
+        }
+      },
+      "required": ["team_id"]
+    }
+
+  },
+
+  "type": "object",
+  "properties": {
+
+    "description": { "type": "string"},
+    "source": { "type": "string"},
+    "license": { "type": "string"},
+
+    "games": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "game_id": { "type": "string" },
+          "visitor_team": { "$ref": "#/definitions/team" },
+          "home_team": { "$ref": "#/definitions/team" },
+          "start_date": { "type": "string", "format": "date" },
+          "start_time": { "type": "string", "format": "time" },
+          "end_date": { "type": "string", "format": "date" },
+          "end_time": { "type": "string", "format": "time" },
+          "site": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "site_id": { "type": "string"},
+              "site_name": { "type": "string"}
+            }
+          },
+          "daynight": { "type": "string" },
+          "use_dh": { "type": "boolean" },
+          "ump_home": { "$ref": "#/definitions/umpire" },
+          "ump_1b": { "$ref": "#/definitions/umpire" },
+          "ump_2b": { "$ref": "#/definitions/umpire" },
+          "ump_3b": { "$ref": "#/definitions/umpire" },
+          "ump_field": { "type": "string" },
+          "how_scored": { "type": "string" },
+          "pitches": { "type": "string" },
+          "scored_by": { "type": "string" },
+          "temp": { "type": "string" },
+          "wind": { "type": "string" },
+          "wind_speed": { "type": "string" },
+          "field_conditions": { "type": "string" },
+          "precip": { "type": "string" },
+          "sky": { "type": "string" },
+          "attendance": { "type": "string" },
+          "winning_pitcher": { "type": "string" },
+          "losing_pitcher": { "type": "string" },
+          "save_pitcher": { "type": ["string", "null"] },
+          "plays": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": { "const": "play" },
+                    "inning": { "type": "integer"},
+                    "batting_team_id": { "type": "string"},
+                    "batting_player_id": { "type": "string"},
+                    "count": { "type": "string"},
+                    "pitch_sequence": { "type": "string"},
+                    "play": { "type": "string"}
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": { "const": "substitution" },
+                    "substitution": { "$ref": "#/definitions/lineup_spot"}
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": { "const": "comment" },
+                    "comment": { "type": "string"}
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": { "const": "batting_adjustment" },
+                    "batting_player_id": { "type": "string" },
+                    "hand": { "type": "string", "enum": ["L", "R"] }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": { "const": "pitching_adjustment" },
+                    "pitching_player_id": { "type": "string"},
+                    "hand": { "type": "string", "enum": ["L", "R"]}
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": { "const": "replay" },
+                    "inning": { "type": "integer"},
+                    "batting_team_id": { "type": "string"},
+                    "batting_player_id": { "type": "string"},
+                    "umpire_id": { "type": "string"},
+                    "site_id": { "type": "string"},
+                    "reason": { "type": "string"},
+                    "reversed": { "type": "boolean" },
+                    "team": { "type": "string"},
+                    "replay_type": { "type": "string"}
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

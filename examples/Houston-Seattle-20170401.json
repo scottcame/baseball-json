@@ -1,0 +1,560 @@
+{
+
+  "description": "Sample baseball json file containing a single game, Houston at Seattle, on April 1, 2017",
+  "source": "The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at 20 Sunset Rd., Newark, DE 19711.",
+
+  "games": [
+    {
+      "game_id": "SEA201704100",
+      "visitor_team": {
+        "team_id": "HOU",
+        "team_name": "Houston Astros",
+        "lineup": [
+          {
+          "player": {
+            "player_id": "sprig001",
+            "player_first_name": "George",
+            "player_last_name": "Springer"
+          },
+          "lineup_position": 1,
+          "fielder_position": 8
+          },
+          {
+          "player": {
+            "player_id": "brega001",
+            "player_first_name": "Alex",
+            "player_last_name": "Bregman"
+          },
+          "lineup_position": 2,
+          "fielder_position": 5
+          },
+          {
+          "player": {
+            "player_id": "altuj001",
+            "player_first_name": "Jose",
+            "player_last_name": "Altuve"
+          },
+          "lineup_position": 3,
+          "fielder_position": 4
+          },
+          {
+          "player": {
+            "player_id": "corrc001",
+            "player_first_name": "Carlos",
+            "player_last_name": "Correa"
+          },
+          "lineup_position": 4,
+          "fielder_position": 6
+          },
+          {
+          "player": {
+            "player_id": "beltc001",
+            "player_first_name": "Carlos",
+            "player_last_name": "Beltran"
+          },
+          "lineup_position": 5,
+          "fielder_position": 10
+          },
+          {
+          "player": {
+            "player_id": "gatte001",
+            "player_first_name": "Evan",
+            "player_last_name": "Gattis"
+          },
+          "lineup_position": 6,
+          "fielder_position": 2
+          },
+          {
+          "player": {
+            "player_id": "gonzm002",
+            "player_first_name": "Marwin",
+            "player_last_name": "Gonzalez"
+          },
+          "lineup_position": 7,
+          "fielder_position": 7
+          },
+          {
+          "player": {
+            "player_id": "reddj001",
+            "player_first_name": "Josh",
+            "player_last_name": "Reddick"
+          },
+          "lineup_position": 8,
+          "fielder_position": 9
+          },
+          {
+          "player": {
+            "player_id": "gurry001",
+            "player_first_name": "Yulieski",
+            "player_last_name": "Gurriel"
+          },
+          "lineup_position": 9,
+          "fielder_position": 3
+          },
+          {
+          "player": {
+            "player_id": "mortc002",
+            "player_first_name": "Charlie",
+            "player_last_name": "Morton"
+          },
+          "lineup_position": 0,
+          "fielder_position": 1
+          }
+        ]
+      },
+      "home_team": {
+        "team_id": "SEA",
+        "team_name": "Seattle Mariners",
+        "lineup": [
+          {
+          "player": {
+            "player_id": "seguj002",
+            "player_first_name": "Jean",
+            "player_last_name": "Segura"
+          },
+          "lineup_position": 1,
+          "fielder_position": 6
+          },
+          {
+          "player": {
+            "player_id": "hanim001",
+            "player_first_name": "Mitch",
+            "player_last_name": "Haniger"
+          },
+          "lineup_position": 2,
+          "fielder_position": 9
+          },
+          {
+          "player": {
+            "player_id": "canor001",
+            "player_first_name": "Robinson",
+            "player_last_name": "Cano"
+          },
+          "lineup_position": 3,
+          "fielder_position": 4
+          },
+          {
+          "player": {
+            "player_id": "cruzn002",
+            "player_first_name": "Nelson",
+            "player_last_name": "Cruz"
+          },
+          "lineup_position": 4,
+          "fielder_position": 10
+          },
+          {
+          "player": {
+            "player_id": "seagk001",
+            "player_first_name": "Kyle",
+            "player_last_name": "Seager"
+          },
+          "lineup_position": 5,
+          "fielder_position": 5
+          },
+          {
+          "player": {
+            "player_id": "valed001",
+            "player_first_name": "Danny",
+            "player_last_name": "Valencia"
+          },
+          "lineup_position": 6,
+          "fielder_position": 3
+          },
+          {
+          "player": {
+            "player_id": "martl004",
+            "player_first_name": "Leonys",
+            "player_last_name": "Martin"
+          },
+          "lineup_position": 7,
+          "fielder_position": 8
+          },
+          {
+          "player": {
+            "player_id": "zunim001",
+            "player_first_name": "Mike",
+            "player_last_name": "Zunino"
+          },
+          "lineup_position": 8,
+          "fielder_position": 2
+          },
+          {
+          "player": {
+            "player_id": "dysoj001",
+            "player_first_name": "Jarrod",
+            "player_last_name": "Dyson"
+          },
+          "lineup_position": 9,
+          "fielder_position": 7
+          },
+          {
+          "player": {
+            "player_id": "paxtj001",
+            "player_first_name": "James",
+            "player_last_name": "Paxton"
+          },
+          "lineup_position": 0,
+          "fielder_position": 1
+          }
+        ]
+      },
+      "game_id": "SEA201704100",
+      "start_date": "2017-04-01",
+      "start_time": "14:11:00",
+      "end_time": "17:07:00",
+      "site": {
+        "site_id": "SEA03",
+        "site_name": "Safeco Field"
+      },
+      "daynight": "day",
+      "use_dh": true,
+      "ump_home": { "umpire_id": "everm901" },
+      "ump_1b": { "umpire_id": "welkb901" },
+      "ump_2b": { "umpire_id": "drecb901" },
+      "ump_3b": { "umpire_id": "bakej902" },
+      "how_scored": "park",
+      "pitches": "pitches",
+      "scored_by": "radoe701",
+      "temp": "54",
+      "wind": "tolf",
+      "wind_speed": "3",
+      "field_conditions": "unknown",
+      "precip": "unknown",
+      "sky": "unknown",
+      "attendance": "44856",
+      "winning_pitcher": "paxtj001",
+      "losing_pitcher": "mortc002",
+      "save_pitcher": null,
+      "plays": [
+        {
+          "type": "play",
+          "inning": 1,
+          "batting_team_id": "HOU",
+          "batting_player_id": "sprig001",
+          "count": "31",
+          "pitch_sequence": "BFBBX",
+          "play": "9/F"
+        },
+        {
+          "type": "play",
+          "inning": 1,
+          "batting_team_id": "HOU",
+          "batting_player_id": "brega001",
+          "count": "22",
+          "pitch_sequence": "CBCFBT",
+          "play": "K"
+        },
+        {
+          "type": "play",
+          "inning": 1,
+          "batting_team_id": "HOU",
+          "batting_player_id": "altuj001",
+          "count": "21",
+          "pitch_sequence": "BBCX",
+          "play": "43/G+"
+        },
+        {
+          "type": "play",
+          "inning": 1,
+          "batting_team_id": "SEA",
+          "batting_player_id": "seguj002",
+          "count": "12",
+          "pitch_sequence": "FCFFBFFFX",
+          "play": "3/G-"
+        },
+        {
+          "type": "play",
+          "inning": 1,
+          "batting_team_id": "SEA",
+          "batting_player_id": "hanim001",
+          "count": "32",
+          "pitch_sequence": "BBFCFBFFC",
+          "play": "K"
+        },
+        {
+          "type": "play",
+          "inning": 1,
+          "batting_team_id": "SEA",
+          "batting_player_id": "canor001",
+          "count": "00",
+          "pitch_sequence": "X",
+          "play": "D8/L+"
+        },
+        {
+          "type": "play",
+          "inning": 1,
+          "batting_team_id": "SEA",
+          "batting_player_id": "cruzn002",
+          "count": "21",
+          "pitch_sequence": "BBCX",
+          "play": "8/F"
+        },
+        {
+          "type": "play",
+          "inning": 2,
+          "batting_team_id": "HOU",
+          "batting_player_id": "corrc001",
+          "count": "22",
+          "pitch_sequence": "BFBFX",
+          "play": "S15/G"
+        },
+        {
+          "type": "play",
+          "inning": 2,
+          "batting_team_id": "HOU",
+          "batting_player_id": "beltc001",
+          "count": "22",
+          "pitch_sequence": "SFB*B1F1X",
+          "play": "54(1)/FO/G"
+        },
+        {
+          "type": "play",
+          "inning": 2,
+          "batting_team_id": "HOU",
+          "batting_player_id": "gatte001",
+          "count": "02",
+          "pitch_sequence": "CCS",
+          "play": "K/DP.1X2(243)"
+        },
+        {
+          "type": "play",
+          "inning": 2,
+          "batting_team_id": "SEA",
+          "batting_player_id": "seagk001",
+          "count": "02",
+          "pitch_sequence": "CFS",
+          "play": "K"
+        },
+        {
+          "type": "play",
+          "inning": 2,
+          "batting_team_id": "SEA",
+          "batting_player_id": "valed001",
+          "count": "12",
+          "pitch_sequence": "CCBS",
+          "play": "K"
+        },
+        {
+          "type": "play",
+          "inning": 2,
+          "batting_team_id": "SEA",
+          "batting_player_id": "martl004",
+          "count": "22",
+          "pitch_sequence": "FBSBC",
+          "play": "K"
+        },
+        {
+          "type": "play",
+          "inning": 3,
+          "batting_team_id": "HOU",
+          "batting_player_id": "gonzm002",
+          "count": "22",
+          "pitch_sequence": "CBCBX",
+          "play": "9/F"
+        },
+        {
+          "type": "play",
+          "inning": 3,
+          "batting_team_id": "HOU",
+          "batting_player_id": "reddj001",
+          "count": "22",
+          "pitch_sequence": "CBBCS",
+          "play": "K"
+        },
+        {
+          "type": "play",
+          "inning": 3,
+          "batting_team_id": "HOU",
+          "batting_player_id": "gurry001",
+          "count": "12",
+          "pitch_sequence": "CCBS",
+          "play": "K"
+        },
+        {
+          "type": "play",
+          "inning": 3,
+          "batting_team_id": "SEA",
+          "batting_player_id": "zunim001",
+          "count": "00",
+          "pitch_sequence": "X",
+          "play": "S7/L"
+        },
+        {
+          "type": "play",
+          "inning": 3,
+          "batting_team_id": "SEA",
+          "batting_player_id": "dysoj001",
+          "count": "00",
+          "pitch_sequence": "H",
+          "play": "HP.1-2"
+        },
+        {
+          "type": "play",
+          "inning": 3,
+          "batting_team_id": "SEA",
+          "batting_player_id": "seguj002",
+          "count": "22",
+          "pitch_sequence": "CBFBX",
+          "play": "64(1)/FO/G/MREV.2-3"
+        },
+        {
+          "type": "play",
+          "inning": 3,
+          "batting_team_id": "HOU",
+          "batting_player_id": "seguj002",
+          "count": "22",
+          "pitch_sequence": "CBFBX",
+          "play": "64(1)/FO/G/MREV.2-3"
+        },
+        {
+          "type": "replay",
+          "inning": 3,
+          "batting_team_id": "SEA",
+          "batting_player_id": "seguj002",
+          "umpire_id": "everm901",
+          "site_id": "SEA03",
+          "reversed": false,
+          "team": "SEA",
+          "replay_type": "C"
+        },
+        {
+          "type": "comment",
+          "comment": "$when Jarrod Dyson was called out at 2B, Mariners manager Scott Servais challenged the ruling, saying Jose Altuve was not on the bag; the call was upheld by replay"
+        },
+        {
+          "type": "play",
+          "inning": 3,
+          "batting_team_id": "SEA",
+          "batting_player_id": "hanim001",
+          "count": "01",
+          "pitch_sequence": "CX",
+          "play": "3/L/DP.1X1(3)"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "HOU",
+          "batting_player_id": "sprig001",
+          "count": "00",
+          "play": "NP"
+        },
+        {
+          "type": "substitution",
+          "substitution": {
+            "player": {
+              "player_id": "mottt001",
+              "player_first_name": "Taylor",
+              "player_last_name": "Motter"
+            },
+            "lineup_position": 1,
+            "fielder_position": 6
+          }
+        },
+        {
+          "type": "comment",
+          "comment": "Mariners shortstop Jean Segura left the game due to an injured leg"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "HOU",
+          "batting_player_id": "sprig001",
+          "count": "22",
+          "pitch_sequence": ".BFBCX",
+          "play": "9/L"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "HOU",
+          "batting_player_id": "brega001",
+          "count": "00",
+          "pitch_sequence": "X",
+          "play": "8/L"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "HOU",
+          "batting_player_id": "altuj001",
+          "count": "31",
+          "pitch_sequence": "BBCBB",
+          "play": "W"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "HOU",
+          "batting_player_id": "corrc001",
+          "count": "02",
+          "pitch_sequence": "C1CX",
+          "play": "S8/L.1-2"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "HOU",
+          "batting_player_id": "beltc001",
+          "count": "32",
+          "pitch_sequence": "CF*B*BB>S",
+          "play": "K"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "SEA",
+          "batting_player_id": "canor001",
+          "count": "32",
+          "pitch_sequence": "FSBFBFFBFB",
+          "play": "W"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "SEA",
+          "batting_player_id": "cruzn002",
+          "count": "02",
+          "pitch_sequence": "SFFX",
+          "play": "S8/G+.1-2"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "SEA",
+          "batting_player_id": "seagk001",
+          "count": "20",
+          "pitch_sequence": "BBX",
+          "play": "S8/F.2-3;1-2"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "SEA",
+          "batting_player_id": "valed001",
+          "count": "12",
+          "pitch_sequence": "BFFS",
+          "play": "K"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "SEA",
+          "batting_player_id": "martl004",
+          "count": "12",
+          "pitch_sequence": "BFSS",
+          "play": "K"
+        },
+        {
+          "type": "play",
+          "inning": 4,
+          "batting_team_id": "SEA",
+          "batting_player_id": "zunim001",
+          "count": "11",
+          "pitch_sequence": "BCX",
+          "play": "9/F"
+        }
+      ]
+    }
+  ]
+
+}
