@@ -136,6 +136,7 @@
                           "type": { "type": "string"},
                           "velocity": { "type": "number"},
                           "pitch_type": { "type": "string"},
+                          "time": { "type": "string", "format": "date-time" },
                           "location": {
                             "oneOf": [
                               {
