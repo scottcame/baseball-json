@@ -198,7 +198,6 @@
           }
         ]
       },
-      "game_id": "SEA201704100",
       "start_date": "2017-04-01",
       "start_time": "14:11:00",
       "end_time": "17:07:00",
@@ -221,7 +220,7 @@
       "field_conditions": "unknown",
       "precip": "unknown",
       "sky": "unknown",
-      "attendance": "44856",
+      "attendance": 44856,
       "winning_pitcher": "paxtj001",
       "losing_pitcher": "mortc002",
       "save_pitcher": null,

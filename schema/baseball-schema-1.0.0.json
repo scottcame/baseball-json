@@ -12,7 +12,9 @@
       "properties": {
         "player_id": { "type": "string"},
         "player_first_name": { "type": "string"},
-        "player_last_name": { "type": "string"}
+        "player_last_name": { "type": "string"},
+        "bats": { "type": "string", "enum": ["L", "R", "B"]},
+        "throws": { "type": "string", "enum": ["L", "R"]}
       },
       "required": ["player_id"]
     },
@@ -33,6 +35,7 @@
       "additionalProperties": false,
       "properties": {
         "player": { "$ref": "#/definitions/player" },
+        "starter": { "type": "boolean" },
         "lineup_position": { "type": "integer" },
         "fielder_position": { "type": "integer" }
       }
@@ -66,6 +69,12 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
+        "required": [
+          "game_id",
+          "visitor_team",
+          "home_team",
+          "plays"
+        ],
         "properties": {
           "game_id": { "type": "string" },
           "visitor_team": { "$ref": "#/definitions/team" },
@@ -82,13 +91,15 @@
               "site_name": { "type": "string"}
             }
           },
-          "daynight": { "type": "string" },
+          "daynight": { "type": "string", "enum": ["day", "night"] },
           "use_dh": { "type": "boolean" },
           "ump_home": { "$ref": "#/definitions/umpire" },
           "ump_1b": { "$ref": "#/definitions/umpire" },
           "ump_2b": { "$ref": "#/definitions/umpire" },
           "ump_3b": { "$ref": "#/definitions/umpire" },
-          "ump_field": { "type": "string" },
+          "ump_lf": { "$ref": "#/definitions/umpire" },
+          "ump_rf": { "$ref": "#/definitions/umpire" },
+          "ump_field": { "$ref": "#/definitions/umpire" },
           "how_scored": { "type": "string" },
           "pitches": { "type": "string" },
           "scored_by": { "type": "string" },
@@ -98,7 +109,7 @@
           "field_conditions": { "type": "string" },
           "precip": { "type": "string" },
           "sky": { "type": "string" },
-          "attendance": { "type": "string" },
+          "attendance": { "type": "integer" },
           "winning_pitcher": { "type": "string" },
           "losing_pitcher": { "type": "string" },
           "save_pitcher": { "type": ["string", "null"] },
@@ -116,7 +127,33 @@
                     "batting_player_id": { "type": "string"},
                     "count": { "type": "string"},
                     "pitch_sequence": { "type": "string"},
-                    "play": { "type": "string"}
+                    "enhanced_pitch_sequence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "type": { "type": "string"},
+                          "velocity": { "type": "number"},
+                          "pitch_type": { "type": "string"},
+                          "location": {
+                            "oneOf": [
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                  "x": { "type": "number" },
+                                  "z": { "type": "number" }
+                                }
+                              },
+                              { "type": "string"}
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "play": { "type": "string"},
+                    "play_time": { "type": "integer"}
                   }
                 },
                 {
