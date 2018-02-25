@@ -64,7 +64,7 @@ games (array)
     save_pitcher (string, 0:1, player ID of pitcher awarded the save)
     plays (array, contains the record of plays that occured in the game, in chronological order)
 
-      play (object, 1:n, the core play structure...note that there are four types of plays)
+      play (object, 1:n, the core play structure...note that there are six types of plays)
 
       type (constant string ="play", represents a basic baseball play)
       inning (integer, 1:1, inning)
