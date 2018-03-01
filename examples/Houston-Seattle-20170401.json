@@ -14,7 +14,8 @@
           "player": {
             "player_id": "sprig001",
             "player_first_name": "George",
-            "player_last_name": "Springer"
+            "player_last_name": "Springer",
+            "player_number": 4
           },
           "lineup_position": 1,
           "fielder_position": 8
@@ -23,7 +24,8 @@
           "player": {
             "player_id": "brega001",
             "player_first_name": "Alex",
-            "player_last_name": "Bregman"
+            "player_last_name": "Bregman",
+            "player_number": 2
           },
           "lineup_position": 2,
           "fielder_position": 5
@@ -32,7 +34,8 @@
           "player": {
             "player_id": "altuj001",
             "player_first_name": "Jose",
-            "player_last_name": "Altuve"
+            "player_last_name": "Altuve",
+            "player_number": 27
           },
           "lineup_position": 3,
           "fielder_position": 4
@@ -41,7 +44,8 @@
           "player": {
             "player_id": "corrc001",
             "player_first_name": "Carlos",
-            "player_last_name": "Correa"
+            "player_last_name": "Correa",
+            "player_number": 1
           },
           "lineup_position": 4,
           "fielder_position": 6
@@ -50,7 +54,8 @@
           "player": {
             "player_id": "beltc001",
             "player_first_name": "Carlos",
-            "player_last_name": "Beltran"
+            "player_last_name": "Beltran",
+            "player_number": 15
           },
           "lineup_position": 5,
           "fielder_position": 10
@@ -59,7 +64,8 @@
           "player": {
             "player_id": "gatte001",
             "player_first_name": "Evan",
-            "player_last_name": "Gattis"
+            "player_last_name": "Gattis",
+            "player_number": 11
           },
           "lineup_position": 6,
           "fielder_position": 2
@@ -68,7 +74,8 @@
           "player": {
             "player_id": "gonzm002",
             "player_first_name": "Marwin",
-            "player_last_name": "Gonzalez"
+            "player_last_name": "Gonzalez",
+            "player_number": 9
           },
           "lineup_position": 7,
           "fielder_position": 7
@@ -77,7 +84,8 @@
           "player": {
             "player_id": "reddj001",
             "player_first_name": "Josh",
-            "player_last_name": "Reddick"
+            "player_last_name": "Reddick",
+            "player_number": 22
           },
           "lineup_position": 8,
           "fielder_position": 9
@@ -86,7 +94,8 @@
           "player": {
             "player_id": "gurry001",
             "player_first_name": "Yulieski",
-            "player_last_name": "Gurriel"
+            "player_last_name": "Gurriel",
+            "player_number": 10
           },
           "lineup_position": 9,
           "fielder_position": 3
@@ -95,7 +104,8 @@
           "player": {
             "player_id": "mortc002",
             "player_first_name": "Charlie",
-            "player_last_name": "Morton"
+            "player_last_name": "Morton",
+            "player_number": 50
           },
           "lineup_position": 0,
           "fielder_position": 1
@@ -110,7 +120,8 @@
           "player": {
             "player_id": "seguj002",
             "player_first_name": "Jean",
-            "player_last_name": "Segura"
+            "player_last_name": "Segura",
+            "player_number": 2
           },
           "lineup_position": 1,
           "fielder_position": 6
@@ -119,7 +130,8 @@
           "player": {
             "player_id": "hanim001",
             "player_first_name": "Mitch",
-            "player_last_name": "Haniger"
+            "player_last_name": "Haniger",
+            "player_number": 17
           },
           "lineup_position": 2,
           "fielder_position": 9
@@ -128,7 +140,8 @@
           "player": {
             "player_id": "canor001",
             "player_first_name": "Robinson",
-            "player_last_name": "Cano"
+            "player_last_name": "Cano",
+            "player_number": 22
           },
           "lineup_position": 3,
           "fielder_position": 4
@@ -137,7 +150,8 @@
           "player": {
             "player_id": "cruzn002",
             "player_first_name": "Nelson",
-            "player_last_name": "Cruz"
+            "player_last_name": "Cruz",
+            "player_number": 23
           },
           "lineup_position": 4,
           "fielder_position": 10
@@ -146,7 +160,8 @@
           "player": {
             "player_id": "seagk001",
             "player_first_name": "Kyle",
-            "player_last_name": "Seager"
+            "player_last_name": "Seager",
+            "player_number": 15
           },
           "lineup_position": 5,
           "fielder_position": 5
@@ -155,7 +170,8 @@
           "player": {
             "player_id": "valed001",
             "player_first_name": "Danny",
-            "player_last_name": "Valencia"
+            "player_last_name": "Valencia",
+            "player_number": 26
           },
           "lineup_position": 6,
           "fielder_position": 3
@@ -164,7 +180,8 @@
           "player": {
             "player_id": "martl004",
             "player_first_name": "Leonys",
-            "player_last_name": "Martin"
+            "player_last_name": "Martin",
+            "player_number": 12
           },
           "lineup_position": 7,
           "fielder_position": 8
@@ -173,7 +190,8 @@
           "player": {
             "player_id": "zunim001",
             "player_first_name": "Mike",
-            "player_last_name": "Zunino"
+            "player_last_name": "Zunino",
+            "player_number": 3
           },
           "lineup_position": 8,
           "fielder_position": 2
@@ -182,7 +200,8 @@
           "player": {
             "player_id": "dysoj001",
             "player_first_name": "Jarrod",
-            "player_last_name": "Dyson"
+            "player_last_name": "Dyson",
+            "player_number": 1
           },
           "lineup_position": 9,
           "fielder_position": 7
@@ -191,7 +210,8 @@
           "player": {
             "player_id": "paxtj001",
             "player_first_name": "James",
-            "player_last_name": "Paxton"
+            "player_last_name": "Paxton",
+            "player_number": 65
           },
           "lineup_position": 0,
           "fielder_position": 1
